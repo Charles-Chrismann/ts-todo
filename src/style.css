@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+#taskForm {
+  margin-bottom: 20px;
+}
+
+#taskForm input, #taskForm select, #taskForm textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+#taskForm button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#taskForm button:hover {
+  background-color: #4cae4c;
+}
+
+#tasks {
+  margin-top: 20px;
+}
+
+.task {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #ddd; /* Couleur par défaut pour la bordure gauche */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding-bottom: 50px;
+}
+
+.task h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.task h3 span {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.task p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.task.high {
+  border-left-color: #d9534f;
+}
+
+.task.medium {
+  border-left-color: #f0ad4e;
+}
+
+.task.low {
+  border-left-color: #5bc0de;
+}
+
+.task button {
+  float: right;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background-color: #c9302c;
+}
+
+#task-filter {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#filterForm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#filterForm label {
+  margin-right: 10px;
+}
+
+#filterForm select, #filterForm input {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#applyFilter {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#applyFilter:hover {
+  background-color: #0056b3;
+}
+
+#task-search {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#searchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+#searchInput {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+.edit-btn {
+  background-color: #4CAF50 !important; /* Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
