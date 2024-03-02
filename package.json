@@ -10,10 +10,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "json-server": "^0.17.4",
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
-  },
-  "dependencies": {
-    "json-server": "^0.17.4"
   }
 }

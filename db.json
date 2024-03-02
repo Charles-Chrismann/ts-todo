@@ -1,18 +1,21 @@
 {
   "tasks": [
     {
-      "title": "Titre de la Tâche 3",
-      "description": "Description de la tâche 3...",
-      "end": "2024-03-10",
-      "priority": "low",
-      "id": 5
+      "title": "Tache 1",
+      "description": "Tache 1",
+      "end": "2024-11-11",
+      "priority": "high",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "name": "perso",
+      "id": 1
     },
     {
-      "title": "Titre de la Tâche 3",
-      "description": "Description de la tâche 3...",
-      "end": "2024-03-10",
-      "priority": "low",
-      "id": 6
+      "name": "pro",
+      "id": 2
     }
   ]
 }

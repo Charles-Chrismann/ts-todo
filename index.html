@@ -8,6 +8,13 @@
 </head>
 
 <body>
+  <div class="popup hide">
+    <div class="overlay"></div>
+    <div class="card">
+      <ul class="categories"></ul>
+      <button class="validate">Valider</button>
+    </div>
+  </div>
     <header>
         <h1>Gestion de Tâches</h1>
     </header>
@@ -31,8 +38,20 @@
                     <option value="high">Haute</option>
                 </select>
                 <button type="submit">Ajouter Tâche</button>
-                <input type="submit" value="Submit" />
             </form>
+        </section>
+        <section id="create-category">
+          <h2>Créer des tags</h2>
+          <div class="form">
+            <div class="inputs">
+              <label for="category-name">Nom de la catégorie</label>
+              <input id="category-name" name="category-name" type="text">
+            </div>
+            <button id="create-category-btn">Créer une catégorie</button>
+          </div>
+          <div class="categories">
+            <ul id="categories"></ul>
+          </div>
         </section>
         <section id="task-filter">
             <h2>Filtrer les Tâches</h2>
@@ -57,27 +76,6 @@
             <div id="tasks">
 
                 <div id="tasks">
-                    <div class="task high">
-                        <h3>Titre de la Tâche 1 <span>– Priorité Haute</span></h3>
-                        <p>Date d'échéance: 2024-03-01</p>
-                        <p>Description de la tâche 1...</p>
-                        <button type="button">Supprimer</button>
-                        <button class="edit-btn">Modifier</button>
-                    </div>
-                    <div class="task medium">
-                        <h3>Titre de la Tâche 2 <span>– Priorité Moyenne</span></h3>
-                        <p>Date d'échéance: 2024-03-05</p>
-                        <p>Description de la tâche 2...</p>
-                        <button type="button">Supprimer</button>
-                        <button class="edit-btn">Modifier</button>
-                    </div>
-                    <div class="task low">
-                        <h3>Titre de la Tâche 3 <span>– Priorité Faible</span></h3>
-                        <p>Date d'échéance: 2024-03-10</p>
-                        <p>Description de la tâche 3...</p>
-                        <button type="button">Supprimer</button>
-                        <button class="edit-btn">Modifier</button>
-                    </div>
                 </div>
 
             </div>

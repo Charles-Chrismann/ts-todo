@@ -17,8 +17,16 @@ class ApiService {
     return await (await fetch(this.baseUrl + '/tasks/' + id, { method: 'DELETE' })).json()
   }
 
+  public static async updateTaskById(id: number, rowsToUpdate: Record<string, any>) {
+    return await (await fetch(this.baseUrl + '/tasks/' + id, { method: 'PATCH', headers: { "Content-Type": "application/json" }, body: JSON.stringify(rowsToUpdate) })).json()
+  }
+
   public static async getCategories() {
     return await (await fetch(this.baseUrl + '/categories')).json()
+  }
+
+  public static async postCategory(name: string) {
+    return await (await fetch(this.baseUrl + '/categories', { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({name}) })).json()
   }
 }
 

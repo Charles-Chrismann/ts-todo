@@ -4,5 +4,5 @@ export default interface TaskInterface {
   description: string | null,
   end: string | null,
   priority: "high" | "medium" | "low"
-  categorieIds: string[]
+  categoriesId: number[]
 }
